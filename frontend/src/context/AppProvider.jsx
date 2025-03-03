@@ -14,6 +14,8 @@ function appReducer(state, action) {
         case "switchAddButtons":
           console.log(action.payload);
           return { ...state, addButtonsVisible: action.payload };
+        case "setSelectedLocation":
+          return { ...state, selectedLocation: action.payload };
         default:
           throw new Error("Unknown action type: " + action.type);
   }
