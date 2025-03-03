@@ -1,28 +1,14 @@
-@font-face {
-  font-family: 'Roboto';
-  src: url('/fonts/Roboto-VariableFont_wdth,wght.woff2') format('woff2');
-  font-weight: 100 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('/fonts/Roboto-Italic-VariableFont_wdth,wght.woff2') format('woff2');
-  font-weight: 100 900;
-  font-style: italic;
-}
-
 /* Poppins ExtraLight */
 @font-face {
   font-family: 'Poppins';
-  src: url('/fonts/Poppins-ExtraLight.woff2') format('woff2');
+  src: url('/fonts/Poppins-ExtraLight.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/fonts/Poppins-ExtraLightItalic.woff2') format('woff2');
+  src: url('/fonts/Poppins-ExtraLightItalic.ttf') format('truetype');
   font-weight: 100;
   font-style: italic;
 }
@@ -30,14 +16,14 @@
 /* Poppins Thin */
 @font-face {
   font-family: 'Poppins';
-  src: url('/fonts/Poppins-Thin.woff2') format('woff2');
+  src: url('/fonts/Poppins-Thin.ttf') format('truetype');
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/fonts/Poppins-ThinItalic.woff2') format('woff2');
+  src: url('/fonts/Poppins-ThinItalic.ttf') format('truetype');
   font-weight: 200;
   font-style: italic;
 }
@@ -45,14 +31,14 @@
 /* Poppins Light */
 @font-face {
   font-family: 'Poppins';
-  src: url('/fonts/Poppins-Light.woff2') format('woff2');
+  src: url('/fonts/Poppins-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/fonts/Poppins-LightItalic.woff2') format('woff2');
+  src: url('/fonts/Poppins-LightItalic.ttf') format('truetype');
   font-weight: 300;
   font-style: italic;
 }
@@ -60,7 +46,7 @@
 /* Poppins Regular */
 @font-face {
   font-family: 'Poppins';
-  src: url('/fonts/Poppins-Regular.woff2') format('woff2');
+  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -68,14 +54,14 @@
 /* Poppins Medium */
 @font-face {
   font-family: 'Poppins';
-  src: url('/fonts/Poppins-Medium.woff2') format('woff2');
+  src: url('/fonts/Poppins-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/fonts/Poppins-MediumItalic.woff2') format('woff2');
+  src: url('/fonts/Poppins-MediumItalic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
 }
@@ -83,14 +69,14 @@
 /* Poppins SemiBold */
 @font-face {
   font-family: 'Poppins';
-  src: url('/fonts/Poppins-SemiBold.woff2') format('woff2');
+  src: url('/fonts/Poppins-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/fonts/Poppins-SemiBoldItalic.woff2') format('woff2');
+  src: url('/fonts/Poppins-SemiBoldItalic.ttf') format('truetype');
   font-weight: 600;
   font-style: italic;
 }
@@ -98,14 +84,14 @@
 /* Poppins Bold */
 @font-face {
   font-family: 'Poppins';
-  src: url('/fonts/Poppins-Bold.woff2') format('woff2');
+  src: url('/fonts/Poppins-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/fonts/Poppins-BoldItalic.woff2') format('woff2');
+  src: url('/fonts/Poppins-BoldItalic.ttf') format('truetype');
   font-weight: 700;
   font-style: italic;
 }
@@ -113,14 +99,14 @@
 /* Poppins Black */
 @font-face {
   font-family: 'Poppins';
-  src: url('/fonts/Poppins-Black.woff2') format('woff2');
+  src: url('/fonts/Poppins-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/fonts/Poppins-BlackItalic.woff2') format('woff2');
+  src: url('/fonts/Poppins-BlackItalic.ttf') format('truetype');
   font-weight: 900;
   font-style: italic;
 }
@@ -128,6 +114,12 @@
 @import "tailwindcss";
 
 @theme {
-  --font-roboto: Roboto, sans-serif;
   --font-poppins: Poppins, sans-serif;
+  --color-primary-700: #003b23;
+  --color-primary-500: #03624c;
+  --color-primary-300: #00df82;
+  --color-valge: #f1f7f7;
+  --color-hall: #d9d9d9;
+  --color-tumehall: #6e6e6e;
+  --color-must: #021a1a;
 }
