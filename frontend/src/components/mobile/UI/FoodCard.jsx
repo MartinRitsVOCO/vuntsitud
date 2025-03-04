@@ -9,12 +9,12 @@ const FoodCard = ( {food} ) => {
         year: 'numeric'
     }).replace(/\./g, '.');
   return (
-    <Link to={`/foods/${food.ID}`}>
+    <Link to={`/food/${food.ID}`}>
         <div className="w-[129px] h-[162px] bg-primary-300 rounded-xl  ">
             <div className="w-full h-[104px] relative " >
             <div className="rounded-tl-lg rounded-br-lg size-8 bg-primary-300 absolute top-0 left-0 " >
-                <div className="h-full w-full p-[5px]">
-                    <img src={"images/icons/"+food.Kategooria+".svg"} alt="" /></div>
+                <div className="h-full w-full p-[8px]">
+                    <img src={"/images/icons/"+food.Kategooria+".svg"} alt="" /></div>
             </div>
                 <img src={food.Pilt} alt="" className="w-full h-full object-cover border-[8px] rounded-xl border-primary-300"/>
                 <div className="">

@@ -30,8 +30,8 @@ function App() {
   const MobileRoutes = () => (
     <Routes>
       <Route path="/" element={<LandingPage />} />
-      <Route path="/foods" element={<AllFoodsPage />} />
-      <Route path="/foods/:id" element={<FoodDetailsPage />} />
+      <Route path="/foods/:location" element={<AllFoodsPage />} />
+      <Route path="/food/:id" element={<FoodDetailsPage />} />
       <Route path="/add-food-barcode" element={<AddFoodBarcodePage />} />
       <Route path="/add-food-manual" element={<AddFoodManualPage />} />
       <Route path="/feedback" element={<FeedbackPage />} />

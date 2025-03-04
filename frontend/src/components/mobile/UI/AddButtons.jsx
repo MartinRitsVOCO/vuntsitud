@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 const AddButtons = () => {
   return (
     <div className="absolute bottom-[85px] w-screen flex justify-center gap-5 ">
@@ -8,11 +10,11 @@ const AddButtons = () => {
           </div>
         </div>
         {/* by hand */}
-        <div className="flex justify-center bg-primary-300 size-[70px] rounded-[100vw] drop-shadow-[0_10px_35px_rgba(0,0,0,0.80)]">
+        <Link to="/add-food-manual"><div className="flex justify-center bg-primary-300 size-[70px] rounded-[100vw] drop-shadow-[0_10px_35px_rgba(0,0,0,0.80)]">
           <div className="self-center">
             <img src="/images/icons/UI/edit file.svg" alt="by hand"/>
           </div>
-        </div>
+        </div></Link>
     </div>
   )
 }

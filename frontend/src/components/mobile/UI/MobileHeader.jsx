@@ -13,7 +13,7 @@ const MobileHeader = () => {
       </Link>
       <div
         className="h-full px-[24px]"
-        onClick={() => dispatch({ type: "switchNavMenu", payload: true })}
+        onClick={() => dispatch({ type: "switchModal", payload: "MobileNavMenu" })}
       >
         <img
           className="mt-[31.5px]"
@@ -21,7 +21,7 @@ const MobileHeader = () => {
           alt=""
         />
       </div>
-      {app.navMenuVisible && <MobileNavMenu />}
+      {app.modalVisible === "MobileNavMenu" && <MobileNavMenu />}
     </header>
   );
 };

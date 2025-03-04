@@ -4,6 +4,7 @@ import MobileHeader from "./UI/MobileHeader"
 import apiService from "../../services/apiService"
 import { useAppContext } from "../../context/AppContext"
 import { useEffect, useState } from "react"
+import { Link } from "react-router"
 
 const LandingPage = () => {
   const { app, dispatch } = useAppContext();
@@ -14,7 +15,7 @@ const LandingPage = () => {
 
   const fetchFoodsFromLocation = async () => {
     try {
-      const data = await apiService.get('/products/' + app.selectedLocation);
+      const data = await apiService.get('/recent/' + app.selectedLocation);
       setFoods(data.data);
     } catch (error) {
       console.error('API call failed:', error);
@@ -28,8 +29,6 @@ const LandingPage = () => {
   useEffect(() => {
     fetchFoodsFromLocation();
   }, [app.selectedLocation]);
-
-  console.log(foods);
 
   return (
     <>
@@ -76,9 +75,9 @@ const LandingPage = () => {
         </div>
         {foods.length > 0 ? (
           <div className="flex justify-center items-center w-full h-full">
-            <p className="font-poppins font-[500] text-[20px]/[24px] rounded-xl bg-primary-500 w-[327px] h-[48px] flex items-center justify-center text-valge">
+            <Link to={`/foods/${app.selectedLocation}`}><p className="font-poppins font-[500] text-[20px]/[24px] rounded-xl bg-primary-500 w-[327px] h-[48px] flex items-center justify-center text-valge">
               Vaata kõiki toite {app.selectedLocation} kapis
-            </p>
+            </p></Link>
           </div>
         ) : (
           <div className="flex justify-center items-center w-full h-full mt-[26px]">

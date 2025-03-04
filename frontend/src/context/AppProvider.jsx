@@ -2,17 +2,16 @@ import { useReducer } from "react";
 import AppContext from "./AppContext";
 
 const initialState = {
-    navMenuVisible: false,
+    modalVisible: false,
     addButtonsVisible: false,
     selectedLocation: "Kopli",
 }
 
 function appReducer(state, action) {
     switch (action.type) {
-        case "switchNavMenu":
-          return { ...state, navMenuVisible: action.payload };
+        case "switchModal":
+          return { ...state, modalVisible: action.payload };
         case "switchAddButtons":
-          console.log(action.payload);
           return { ...state, addButtonsVisible: action.payload };
         case "setSelectedLocation":
           return { ...state, selectedLocation: action.payload };
